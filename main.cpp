@@ -42,11 +42,15 @@ void equazioni() {
     	x1 = -b+sqrt(delta)/(2*a);
     	x2 = -b-sqrt(delta)/(2*a);
     	std::cout << "x1 = " << x1 << "\nx2 = " << x2;
+    	std::cout << "\n";
+    	system("PAUSE");
 	}
 	else if (delta==0) {
 		std::cout << delta0 << "\n";
 		x = -b/(2*a);
 		std::cout << "x1,2 = " << x << "\n";
+		std::cout << "\n";
+		system("PAUSE");
 	}
     else {
     	std::cout << deltaMin0 << "\n";
