@@ -39,8 +39,8 @@ void equazioni() {
     
     if (delta>0) {
     	std::cout << deltaMag0 << "\n";
-    	x1 = -b+sqrt(delta)/(2*a);
-    	x2 = -b-sqrt(delta)/(2*a);
+    	x1 = (-b+sqrt(delta))/(2*a);
+    	x2 = (-b-sqrt(delta))/(2*a);
     	std::cout << "x1 = " << x1 << "\nx2 = " << x2;
     	std::cout << "\n";
     	system("PAUSE");
