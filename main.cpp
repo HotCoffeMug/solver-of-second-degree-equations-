@@ -16,13 +16,11 @@
 //RISOLVI L'EQUAZIONE
 void equazioni() {
     system("CLS");
-    float a,b,c,delta,x1,x2,x,reale,immaginario,sic;
+    float a,b,c,delta,x1,x2,x;
     
     std::string deltaMag0 = "Il delta e' maggiore di 0 quindi ci sono 2 soluzioni reali\n";
     std::string delta0 = "Il delta e' uguale a 0 quindi ci sono 2 soluzioni reali e coincidenti\n";
     std::string deltaMin0 = "Il delta e' minore di 0 quindi ci sono 0 soluzioni reali\n";
-    std::string deltaMin0seisicuro = "Vuoi comunque risolverla? (0=no/1=si)\n";
-    std::string deltaMin0seisicuroSI = "Ci sono 2 radici complesse e coniugate \n";
     
     std::cout << "Definisci il primo coefficiente (A): ";
     std::cin>>a;
@@ -53,33 +51,9 @@ void equazioni() {
 		system("PAUSE");
 	}
     else {
-    	std::cout << deltaMin0 << "\n";
-//    	std::cout << deltaMin0seisicuro;
-    	std::string sic;
-    	std::getline(std::cin, sic);
-    	
-		while(sic != "0" && sic != "1") {
-//			std::cout << "Scelta non valida\n\n";
-//			
-			std::cout << deltaMin0seisicuro;
-			std::getline(std::cin, sic);
+    	std::cout << deltaMin0;
+    	system("PAUSE");
 		}
-		
-		if (sic == "0") {
-			std::cout << "ok";
-			
-		} else if (sic == "1") {
-			std::cout << deltaMin0seisicuroSI;
-			std::cout << "\n";
-			reale=-b/ (2*a);
-			immaginario=sqrt(-delta)/ (2*a);
-			
-			std::cout << "\nParte reale: " << reale;
-			std::cout << "\nParte immaginaria: " << immaginario << "\n";
-			system("PAUSE");
-		}
-    	
-	}
 
 }
 //FINE RISOLVI L'EQUAZIONE
