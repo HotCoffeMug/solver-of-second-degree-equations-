@@ -10,6 +10,7 @@
 #include <iostream> //importa libreria 'iostream'.
 #include <cmath> //importa libreria 'math.h'.
 #include <string> //importa libreria 'string'.
+#include <complex> //importa libreria 'complex'.
 
 
 
@@ -20,7 +21,7 @@ void equazioni() {
     
     std::string deltaMag0 = "Il delta e' maggiore di 0 quindi ci sono 2 soluzioni reali\n";
     std::string delta0 = "Il delta e' uguale a 0 quindi ci sono 2 soluzioni reali e coincidenti\n";
-    std::string deltaMin0 = "Il delta e' minore di 0 quindi ci sono 0 soluzioni reali\n";
+    std::string deltaMin0 = "Il delta e' minore di 0 quindi non ci sono soluzioni reali\n";
     
     std::cout << "Definisci il primo coefficiente (A): ";
     std::cin>>a;
@@ -51,9 +52,11 @@ void equazioni() {
 		system("PAUSE");
 	}
     else {
-    	std::cout << deltaMin0;
-    	system("PAUSE");
-		}
+    	std::cout << deltaMin0 << "\n";
+
+		std::cout << "\n";
+		system("PAUSE");
+	}
 
 }
 //FINE RISOLVI L'EQUAZIONE
